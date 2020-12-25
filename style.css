@@ -523,7 +523,7 @@ textarea:focus {
     display: flex;
     display: -webkit-flex;
     width: calc(100% - 157px);
-    padding: 17px 60px 18px 0;
+    padding: 17px 60px 20px 0;
 }
 
 .header_row .right {
@@ -1703,9 +1703,59 @@ textarea:focus {
 
 /*-- /Section 5 - About --*/
 
+/*-- Section 1 - Contacts --*/
 
+.promo_sect_2 {
+    padding: 53px 0 55px 0;
+    border-bottom: 1px solid #ffffff;
+    min-height: auto;
+}
 
+.promo_sect_2:after {
+    display: none;
+}
 
+.promo_sect_2 .breadcrumbs_wrapp {
+
+}
+
+.h1_wrapp_2 {
+    padding: 2px 0;
+}
+
+.h1_wrapp_2 h1 {
+    letter-spacing: 13px;
+}
+
+.promo_sect_2 .h1_wrapp_2 {
+
+}
+
+/*-- /Section 1 - Contacts --*/
+
+/*-- Section 2 - Contacts --*/
+
+.grad_bg {
+    background: rgb(236,244,253);
+    background: -moz-linear-gradient(top, rgba(236,244,253,1) 0%, rgba(246,251,255,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(236,244,253,1) 0%,rgba(246,251,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(236,244,253,1) 0%,rgba(246,251,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ecf4fd', endColorstr='#f6fbff',GradientType=0 );
+}
+
+.sect_2_contacts {
+    padding-bottom: 22px;
+}
+
+/*-- /Section 2 - Contacts --*/
+
+/*-- Section 2 - Contacts --*/
+
+.sect_3_contacts {
+    padding: 58px 0 12px;
+}
+
+/*-- /Section 2 - Contacts --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
