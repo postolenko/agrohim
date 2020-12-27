@@ -1364,10 +1364,6 @@ textarea:focus {
     border-bottom: 1px solid #fff;
 }
 
-.h1_wrapp {
-
-}
-
 .h1_wrapp h1 {
     letter-spacing: 9px;
     text-align: center;
@@ -1390,6 +1386,7 @@ textarea:focus {
 }
 
 .article img[style='float:right'] {
+    margin-left: 40px;
     margin-bottom: 49px;
 }
 
@@ -1407,10 +1404,6 @@ textarea:focus {
 /*-- /Section 2 - About --*/
 
 /*-- Section 3 - About --*/
-
-.h2_wrapp {
-
-}
 
 .h2_wrapp h2 {
     letter-spacing: 9px;
@@ -1544,10 +1537,6 @@ textarea:focus {
     text-align: center;
 }
 
-.h2_wrapp_2.white {
-
-}
-
 .h2_wrapp_2.white h2 {
     color: #fff;
     letter-spacing: 9px;
@@ -1640,10 +1629,6 @@ textarea:focus {
     justify-content: flex-end;
     -webkit-justify-content: flex-end;
     width: 250px;
-}
-
-.checkbox_wrapp {
-
 }
 
 .checkbox_wrapp label {
@@ -2305,7 +2290,6 @@ textarea:focus {
 .yellow_pill_2 {
     padding: 25px 35px 23px 55px;
     text-align: right;
-    /*padding: 25px 55px 23px 35px;*/
 }
 
 .yellow_pill_2:before {
@@ -2376,10 +2360,6 @@ textarea:focus {
 
 .yellow_pill_2:hover:after {
     left: 21px;
-}
-
-.article_2 .date_2 {
-
 }
 
 .article_2 .yellow_pill {
