@@ -5,3 +5,4 @@
 # http://postolenko.github.io/agrohim/news.html
 # http://postolenko.github.io/agrohim/news_single.html
 # http://postolenko.github.io/agrohim/services.html
+# http://postolenko.github.io/agrohim/service_single.html
