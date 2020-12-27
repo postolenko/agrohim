@@ -2506,7 +2506,57 @@ textarea:focus {
 
 /*-- /Section 2 - Services --*/
 
+/*-- Section 2 - Service Single --*/
 
+.sect_2_service_single {
+    padding-bottom: 60px;
+}
+
+.service_single_footer {
+    display: flex;
+    display: -webkit-flex;
+    padding: 15px 0;
+}
+
+.service_single_footer .col_1 {
+    width: calc(100% - 270px);
+    padding: 10px 10px 10px 0;
+}
+
+.service_single_footer .col_2 {
+    width: 270px;
+    padding: 10px 0 10px 10px;
+}
+
+.service_price {
+    display: flex;
+    display: -webkit-flex;
+    align-items: baseline;
+    -webkit-align-items: baseline;
+    margin: 5px -13px;
+}
+
+.service_price > div {
+    padding: 0 13px;
+}
+
+.service_price p {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 35px;
+    color: #aeaeae;
+}
+
+p.price {
+    font-weight: normal;
+    font-size: 57px;
+    line-height: 60px;
+    color: #45a919;
+}
+
+/*-- /Section 2 - Service Single --*/
 
 
 
@@ -2670,10 +2720,6 @@ footer {
     line-height: 30px;
     font-weight: normal;
     color: #000000;
-}
-
-.nav_wrapp ul {
-
 }
 
 .nav_wrapp ul li {
@@ -2880,10 +2926,6 @@ footer {
     padding: 10px 0 10px 10px;
 }
 
-.p_wrapp {
-
-}
-
 .p_wrapp p {
     font-size: 15px;
     line-height: 22px;
@@ -2948,10 +2990,6 @@ footer {
 
 .contact_wrap > div:nth-child(1) {
     padding-right: 10px;
-}
-
-.contact_wrap > div:nth-child(2) {
-
 }
 
 .contact_wrap h3 {
