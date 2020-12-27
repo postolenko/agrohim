@@ -4,8 +4,14 @@ function getThumbsParams() {
         $(this).find(".contact_thumb_2").each(function() {
             index = $(this).index(".contact_thumb_2");
             leftCoord = coords.offset().left;
-            // rigthCoord = bodyWidth - coords.width() - coords.offset().left - 18;
-            rigthCoord = bodyWidth - coords.width() - coords.offset().left;
+            div = document.createElement('div');
+            div.style.overflowY = 'scroll';
+            div.style.width = '50px';
+            div.style.height = '50px';
+            div.style.visibility = 'hidden';
+            document.body.appendChild(div);
+            scrollWidth = div.offsetWidth - div.clientWidth;
+            rigthCoord = bodyWidth - coords.width() - coords.offset().left - scrollWidth;
             if(index % 2 == 0) {
                 $(this).find(".offset").css({
                     "padding-left" : leftCoord + "px"
@@ -18,12 +24,12 @@ function getThumbsParams() {
         });
     });
 
-    // $(".contact_thumb_2").each(function() {
-    //     $(this).find(".map").css({"max-height" : "auto"});
-    //     mapBox = $(this).find(".map");
-    //     mapBoxHeight = $(this).height() - $(this).find(".contact_thumb_descript").outerHeight() - $(this).find(".contact_thumb_title").outerHeight();
-    //     mapBox.css({"max-height" : mapBoxHeight + "px"});
-    // });
+    $(".contact_thumb_2").each(function() {
+        $(this).find(".map").css({"min-height" : "auto"});
+        mapBox = $(this).find(".map");
+        mapBoxHeight = $(this).height() - $(this).find(".contact_thumb_descript").outerHeight() - $(this).find(".contact_thumb_title").outerHeight();
+        mapBox.css({"min-height" : mapBoxHeight + "px"});
+    });
 }
 
 var w = window,
@@ -34,7 +40,7 @@ bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
 
 $(window).load(function() {
-    getThumbsParams();
+    
 });
 
 $(window).resize(function() {
@@ -49,6 +55,8 @@ $(document).scroll(function() {
 });
 
 $(document).ready(function() {
+
+    getThumbsParams();
 
     // if( $(".portfolio_slider").length > 0 ) {
     //     $(".portfolio_slider").not(".slick-initialized").slick({
