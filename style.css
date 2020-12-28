@@ -525,6 +525,7 @@ textarea:focus {
 
 .header_site {
 /*    outline: 1px solid red;*/
+    background-color: #fff;
 }
 
 .header_row {
@@ -610,10 +611,7 @@ textarea:focus {
 
 .contact_thumb > div:nth-child(1) {
     padding-right: 10px;
-}
-
-.contact_thumb > div:nth-child {
-
+    text-align: left;
 }
 
 .list_1 {
@@ -759,9 +757,6 @@ textarea:focus {
     margin-right: -10px;
 }
 
-.icons_list li {
-}
-
 .icons_list li a  {
     display: block;
     width: 20px;
@@ -824,6 +819,10 @@ textarea:focus {
     text-transform: uppercase;
 }
 
+.contacts_thumbs_resp {
+    display: none;
+}
+
 /* ----- Responsive Menu Button ------ */
 
 .respmenubtn {
@@ -835,8 +834,8 @@ textarea:focus {
     background: transparent;
     cursor: pointer;
     position: relative;
-    top: 6px;
-    z-index: 11;
+    top: 10px;
+    z-index: 13;
     border: 1px solid transparent;
 }
 
@@ -844,7 +843,7 @@ textarea:focus {
     display: block;
     width: 27px;
     height: 2px;
-    background: #466896;
+    background: rgb(65, 167, 20);
     margin: 0 auto 7px auto;
     -webkit-transition-property: transform, border, background;
     -webkit-transition-duration: .3s;
@@ -1046,6 +1045,7 @@ textarea:focus {
     align-items: flex-end;
     -webkit-align-items: flex-end;
     width: 50%;
+    padding-right: 25px;
 }
 
 .main_thumb > div {
@@ -1054,6 +1054,8 @@ textarea:focus {
 
 .main_thumb:nth-child(even) {
     text-align: right;
+    padding-left: 25px;
+    padding-right: 0;
 }
 
 .main_thumb h1 {
@@ -1284,6 +1286,10 @@ textarea:focus {
 .breadcrumbs {
     display: flex;
     display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 0 -9px;
+    padding: 7px 0;
 }
 
 .promo_sect .breadcrumbs_wrapp {
@@ -1297,6 +1303,7 @@ textarea:focus {
 
 .breadcrumbs li {
     position: relative;
+    line-height: 1;
     padding: 3px 9px;
 }
 
@@ -1480,10 +1487,10 @@ textarea:focus {
 }
 
 .license_thumb .img_box {
-    height: 650px;
+    height: auto;
     max-width: 487px;
     margin: 20px auto 40px auto;
-    padding-top: 30px;
+    padding: 30px 25px;
     background-color: #fff;
 }
 
@@ -1491,7 +1498,7 @@ textarea:focus {
     display: block;
     width: auto;
     height: auto;
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -1708,7 +1715,7 @@ textarea:focus {
 .promo_sect_2 {
     padding: 53px 0 55px 0;
     border-bottom: 1px solid #ffffff;
-    min-height: auto;
+    min-height: auto !important;
 }
 
 .promo_sect_2:after {
@@ -1814,7 +1821,7 @@ textarea:focus {
 .contact_thumb_descript {
     position: relative;
     background-color: #fff7b8;
-    padding: 29px 0 33px 0;
+    padding: 29px 0 33px;
 }
 
 .contact_thumb_descript:before {
@@ -1950,7 +1957,7 @@ textarea:focus {
     margin: 32px 15px;
 }
 
-.news_thumb .img_box_wrapp {
+.news_thumb .img_box_wrapp_2 {
     height: 330px;
     margin-bottom: 38px;
     position: relative;
@@ -1961,6 +1968,25 @@ textarea:focus {
     height: 330px;
     overflow: hidden;
     position: relative;
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: 5s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: transform;
+    -moz-transition-duration: 5s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: transform;
+    -ms-transition-duration: 5s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: transform;
+    -o-transition-duration: 5s;
+    -o-transition-timing-function: ease;
+
+    transition-property: transform;
+    transition-duration: 5s;
+    transition-timing-function: ease;
 }
 
 .news_thumb:hover .img_box {
@@ -1983,7 +2009,7 @@ textarea:focus {
     color: #fff;
 }
 
-.news_thumb .img_box_wrapp .date {
+.news_thumb .img_box_wrapp_2 .date {
     position: absolute;
     top: 0;
     right: 0;
@@ -2362,7 +2388,7 @@ textarea:focus {
     left: 21px;
 }
 
-.article_2 .yellow_pill {
+.article_2_footer .yellow_pill {
     margin: 53px 0 20px 0;
 }
 
@@ -2988,7 +3014,7 @@ footer {
     align-items: stretch;  
 }
 
-.contact_wrap > div:nth-child(1) {
+.contact_wrap_2 > div:nth-child(1) {
     padding-right: 10px;
 }
 
@@ -3038,6 +3064,10 @@ footer {
 
 .contact_wrap a:hover {
     color: #45a919;
+}
+
+.contact_wrap_3 > div:nth-child(1) {
+    padding-right: 10px;
 }
 
 .soc_list {
